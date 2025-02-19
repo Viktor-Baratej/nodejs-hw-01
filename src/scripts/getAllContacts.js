@@ -6,13 +6,13 @@ const getAllContacts = async () => {
     const contacts = await readContacts();
 
     if (!Array.isArray(contacts)) {
-      throw new Error('Contacts data is corrupted!');
+      throw new Error('Дані контактів пошкоджено!');
     }
 
-    console.log('📋 All contacts:', contacts);
+    console.log('📋 Всі контакти:', contacts);
     return contacts;
   } catch (error) {
-    console.error('❌ Error reading contacts:', error.message);
+    console.error('❌ Помилка читання контактів:', error.message);
     return [];
   }
 };

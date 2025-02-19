@@ -6,14 +6,14 @@ export const countContacts = async () => {
     const contacts = await readContacts();
 
     if (!Array.isArray(contacts)) {
-      throw new Error('Contacts data is corrupted!');
+      throw new Error('Дані контактів пошкоджено!');
     }
 
     const count = contacts.length;
-    console.log(`📊 Total contacts: ${count}`);
+    console.log(`📊 Всього контактів: ${count}`);
     return count;
   } catch (error) {
-    console.error('❌ Error counting contacts:', error.message);
+    console.error('❌ Помилка підрахунку контактів:', error.message);
     return 0;
   }
 };

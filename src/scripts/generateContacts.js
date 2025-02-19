@@ -7,11 +7,11 @@ const generateContacts = async () => {
     const existingContacts = await readContacts();
 
     if (!Array.isArray(existingContacts)) {
-      throw new Error('Contacts data is corrupted!');
+      throw new Error('Дані контактів пошкоджено!');
     }
 
     // Фіксована кількість контактів для генерації
-    const count = 5; // У ТЗ не вказано, що має бути динамічний аргумент
+    const count = 5;
 
     // Генеруємо контакти
     const newContacts = Array.from({ length: count }, createFakeContact);
@@ -22,9 +22,9 @@ const generateContacts = async () => {
     // Записуємо новий масив у файл
     await writeContacts(updatedContacts);
 
-    console.log(`✅ Successfully added ${count} new contacts!`);
+    console.log(`✅ Успішно додано ${count} нових контактів!`);
   } catch (error) {
-    console.error('❌ Error generating contacts:', error.message);
+    console.error('❌ Помилка створення контактів:', error.message);
   }
 };
 

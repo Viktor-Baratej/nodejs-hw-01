@@ -7,11 +7,11 @@ export const removeLastContact = async () => {
     const contacts = await readContacts();
 
     if (!Array.isArray(contacts)) {
-      throw new Error('Contacts data is corrupted!');
+      throw new Error('Дані контактів пошкоджено!');
     }
 
     if (contacts.length === 0) {
-      console.log('No contacts to remove.');
+      console.log('Немає контактів для видалення.');
       return;
     }
 
@@ -21,9 +21,9 @@ export const removeLastContact = async () => {
     // Записуємо оновлений список контактів у файл
     await writeContacts(contacts);
 
-    console.log('🗑️ Last contact has been removed!');
+    console.log('🗑️ Останній контакт видалено!');
   } catch (error) {
-    console.error('❌ Error removing last contact:', error.message);
+    console.error('❌ Помилка видалення останнього контакту:', error.message);
   }
 };
 

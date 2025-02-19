@@ -8,9 +8,9 @@ export const removeAllContacts = async () => {
     // Записуємо порожній масив у файл
     await writeContacts(emptyContacts);
 
-    console.log('🗑️ All contacts have been removed!');
+    console.log('🗑️ Усі контакти видалено!');
   } catch (error) {
-    console.error('❌ Error removing contacts:', error.message);
+    console.error('❌ Помилка видалення контактів:', error.message);
   }
 };
 
