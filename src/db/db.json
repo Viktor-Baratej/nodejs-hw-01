@@ -1,1 +1,44 @@
-[]
+[
+  {
+    "id": "c71cdd32-e329-467c-9f1b-1522bf276907",
+    "name": "Mrs. Susan Waters",
+    "phone": "1-895-208-3219 x613",
+    "email": "Adele_Keeling56@hotmail.com",
+    "job": "Customer Quality Orchestrator"
+  },
+  {
+    "id": "48309013-bb5e-4f61-b0d0-b6a81cea33ac",
+    "name": "Henry Walker",
+    "phone": "949.921.8126 x3016",
+    "email": "Cicero.Borer51@gmail.com",
+    "job": "Dynamic Solutions Architect"
+  },
+  {
+    "id": "420078f0-7092-48d1-b361-f1219650ed35",
+    "name": "Chelsea Miller-Wisozk",
+    "phone": "818.439.6003 x31581",
+    "email": "Mossie.Zemlak72@hotmail.com",
+    "job": "Regional Assurance Agent"
+  },
+  {
+    "id": "f91c133d-a707-4c9a-8534-debdba1dc2d4",
+    "name": "Mr. Alton Willms",
+    "phone": "970.790.7692 x01285",
+    "email": "Katharina_Jacobi@hotmail.com",
+    "job": "Corporate Division Producer"
+  },
+  {
+    "id": "19eed990-97d7-425e-8730-d7c4c0136411",
+    "name": "Dr. Tommie Maggio",
+    "phone": "1-797-587-7260",
+    "email": "Ernestine_Daniel@gmail.com",
+    "job": "Global Integration Supervisor"
+  },
+  {
+    "id": "ddbb750a-a9b5-4853-ad1a-20faca311135",
+    "name": "Antoinette Donnelly",
+    "phone": "(665) 667-1596 x10908",
+    "email": "Lou_Daniel32@yahoo.com",
+    "job": "Dynamic Group Agent"
+  }
+]
